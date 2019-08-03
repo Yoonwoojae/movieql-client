@@ -9,10 +9,10 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <React.Fragment>
+        <main>
           <Route exact={true} path={'/'} component={Home} />
           <Route path={'/details/:movieId'} component={Detail} />
-        </React.Fragment>
+        </main>
       </Router>
     </ApolloProvider>
   );
